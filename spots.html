@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourist Spots | LakBAyLETE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f6f9f6;
+      color: #1b3a26;
+    }
+
+    header {
+      background: linear-gradient(rgba(27, 58, 38, 0.4), rgba(27, 58, 38, 0.4)),
+                  url('https://wanderera.com/wp-content/uploads/2018/07/Orchard-1.jpg') center/cover no-repeat;
+      height: 30vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #1b3a26;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #cde0cd;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.8em;
+      color: #0f2617;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #1b3a26;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1.2em;
+      margin: 20px auto 40px;
+      max-width: 800px;
+      color: #2b4a34;
+    }
+
+    /* Horizontal Scroll Section */
+    .spots-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .spots-container::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .spots-container::-webkit-scrollbar-thumb {
+      background: #1b3a26;
+      border-radius: 10px;
+    }
+
+    .spot-card {
+      flex: 0 0 300px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .spot-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Alternating layout */
+    .spot-card:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+
+    .spot-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .spot-card h3 {
+      color: #1b3a26;
+      font-size: 1.4em;
+      margin: 15px 0 5px;
+    }
+
+    .spot-card p {
+      font-size: 0.95em;
+      padding: 0 15px 20px;
+      color: #2b4a34;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: #1b3a26;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-top: 4px solid #cde0cd;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>#LakBAyLETE <br> Explore the Natural Beauty of Balete, Batangas</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="spots.html">Tourist Spots</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Discover Balete’s Hidden Gems</h2>
+    <p>
+      Explore the breathtaking tourist spots of Balete, Batangas — from tranquil lakesides to scenic hill views. 
+      Here are some of the must-visit places that showcase the beauty of nature and culture.
+    </p>
+
+    <div class="spots-container">
+      <div class="spot-card">
+        <img src="https://wanderera.com/wp-content/uploads/2018/07/Orchard-1.jpg" alt="Spot 1">
+        <div>
+          <h3>Spot #1</h3>
+          <p>A peaceful orchard with a relaxing ambiance and stunning mountain views perfect for unwinding.</p>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <img src="https://cdn.batangasforum.com/wp-content/uploads/2020/04/talisay-batangas.jpg" alt="Spot 2">
+        <div>
+          <h3>Spot #2</h3>
+          <p>Enjoy the serene lakeside where you can experience kayaking and the gentle breeze of Taal Lake.</p>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Taal_Volcano_Batangas.jpg" alt="Spot 3">
+        <div>
+          <h3>Spot #3</h3>
+          <p>Capture panoramic views of the iconic Taal Volcano and witness breathtaking sunsets over the horizon.</p>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <img src="https://phtravelblog.com/wp-content/uploads/2021/03/balayong-park-batangas.jpg" alt="Spot 4">
+        <div>
+          <h3>Spot #4</h3>
+          <p>A nature park perfect for picnics and outdoor walks, surrounded by lush trees and local flowers.</p>
+        </div>
+      </div>
+
+      <div class="spot-card">
+        <img src="https://www.lakwatsero.com/wp-content/uploads/2019/07/Malabrigo-Lighthouse-Batangas-1.jpg" alt="Spot 5">
+        <div>
+          <h3>Spot #5</h3>
+          <p>Visit the historical lighthouse overlooking the sea, a symbol of Balete’s enduring coastal beauty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LakBAyLETE | Explore. Experience. Enjoy Balete, Batangas.</p>
+  </footer>
+</body>
+</html>
